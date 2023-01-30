@@ -19,8 +19,8 @@ android {
         // Enable multiDex support.
         multiDexEnabled true
 
-        // BUILD CONFIG FIELDS
-        buildConfigField 'String', 'BASE_URL', '""'
+        // BUILD CONFIG BASE_URL ( DEMO API )
+        buildConfigField 'String', 'BASE_URL', '"https://reqres.in/"'
 
         namespace 'mob.nereek.io'
 
