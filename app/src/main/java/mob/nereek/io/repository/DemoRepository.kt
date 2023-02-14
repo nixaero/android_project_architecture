@@ -12,8 +12,8 @@ class DemoRepository @Inject constructor(
 ) {
     fun loadDemo(
         compositeDisposable: CompositeDisposable,
-        onResponse: APIResponse<Demo>,
         input: String,
+        onResponse: APIResponse<Demo>
         ): io.reactivex.rxjava3.disposables.Disposable {
         return apiService.getDemo(input)
             .subscribeOn(io.reactivex.rxjava3.schedulers.Schedulers.io())
